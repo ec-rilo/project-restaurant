@@ -7,4 +7,4 @@ A Mexican Restaurant website catering to all.
 <p>
 <br>
 <br>
-<a href="https://ec-rilo.github.io/project-restaurant/"><strong>View Live >></strong></a>
+<a href="#"><strong>View Live >></strong></a>
