@@ -29,8 +29,17 @@ a {
     padding: 10px;
 }
 
+.top-nav li:nth-child(6) {
+    margin-left: 50px;
+}
+
 .top-nav li a {
     color: #000;
+}
+
+.social-media-btns {
+    width: 40px;
+    height: 40px;
 }
 
 .bottom-nav {
