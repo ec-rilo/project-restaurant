@@ -57,7 +57,7 @@ ul {
 .nav-logo-name {
     font-size: 35px;
     font-weight: bold;
-    color: var(--color-1);
+    color: #000;
 }
 
 .top-nav-menu-items {
