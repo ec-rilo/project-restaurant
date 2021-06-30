@@ -76,6 +76,15 @@ ul {
     height: 40px;
 }
 
+.logo-nav {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-left: 100px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
 .bottom-nav {
     position: absolute;
     background-color: var(--color-1);
@@ -133,6 +142,15 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.logo-main {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    filter: brightness(0) invert(1);
 }
 
 .main-title {
