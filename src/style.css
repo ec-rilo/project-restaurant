@@ -130,4 +130,22 @@ ul {
 
 .title-container {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-title {
+    text-align: center;
+    color: #FFF;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.secondary-title {
+    text-align: center;
+    color: #FFF;
+    font-size: 40px;
+    margin-top: 10px;
+    font-weight: bold;
 }
