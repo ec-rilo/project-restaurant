@@ -39,6 +39,16 @@ a {
     font-size: var(--font-size-1);
 }
 
+.top-nav li a {
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+}
+
+
+.top-nav li a:hover {
+    opacity: .5;
+}
+
 .top-nav li:nth-child(6) {
     margin-left: 50px;
     padding: 10px;
