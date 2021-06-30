@@ -26,11 +26,16 @@ a {
 }
 
 .top-nav li {
-    padding: 10px;
+    padding: 20px;
 }
 
 .top-nav li:nth-child(6) {
-    margin-left: 50px;
+    margin-left: 80px;
+    padding: 10px;
+}
+
+.top-nav li:nth-child(7) {
+    padding: 10px;
 }
 
 .top-nav li a {
