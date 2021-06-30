@@ -1,3 +1,51 @@
-.primary-nav {
+body {
+    margin: 0;
+}
+
+.nav-container {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.top-nav {
+    position: relative;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 90px;
+}
+
+.top-nav-menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.top-nav li {
+    padding: 10px;
+}
+
+.bottom-nav-menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+
+}
+
+.bottom-nav {
+    position: absolute;
     background-color: #33B5ED;
+    height: 50px;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
 }
