@@ -31,7 +31,7 @@ a {
     justify-content: flex-end;
     height: 100%;
     align-items: center;
-    margin-right: 100px;
+    margin-right: 130px;
 }
 
 .top-nav li {
@@ -40,7 +40,7 @@ a {
 }
 
 .top-nav li:nth-child(6) {
-    margin-left: 80px;
+    margin-left: 50px;
     padding: 10px;
 }
 
