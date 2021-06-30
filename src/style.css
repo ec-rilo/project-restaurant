@@ -1,3 +1,12 @@
+:root {
+    --font-1: 'Open Sans';
+    --font-size-1: 13px;
+}
+
+body {
+    font-family: var(--font-1);
+}
+
 a {
     text-decoration: none;
 }
@@ -27,6 +36,7 @@ a {
 
 .top-nav li {
     padding: 20px;
+    font-size: var(--font-size-1);
 }
 
 .top-nav li:nth-child(6) {
