@@ -1,6 +1,7 @@
 import _ from 'lodash';
-import './styles/main.css';
 import './styles/reset.css';
+import './styles/main.css';
+
 
 
 "use strict";
