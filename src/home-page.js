@@ -31,6 +31,10 @@ let imgLibrary = (() => {
     mainLogo.src = logo;
     mainLogo.setAttribute('alt', 'Mexican Restaurant Logo');
 
+    const mainLogoNav = new Image();
+    mainLogoNav.src = logo;
+    mainLogoNav.setAttribute('alt', 'Mexican Restaurant Logo');
+
     const mainBackgroundImg = new Image();
     mainBackgroundImg.src = mainBackgroundImage;
     mainBackgroundImg.setAttribute('alt', 'Picture of tacos');
@@ -39,6 +43,7 @@ let imgLibrary = (() => {
         facebookIconCont,
         instaIconCont,
         mainLogo,
+        mainLogoNav,
         mainBackgroundImg,
     }
 })();
@@ -62,7 +67,7 @@ let createHomePage = (() => {
 
     const logoItem1 = document.createElement('li');
     logoItem1.classList.add('logo-item');
-    const logoItem1Img = imgLibrary.mainLogo;
+    const logoItem1Img = imgLibrary.mainLogoNav;
     logoItem1Img.classList.add('logo-nav');
     logoItem1.appendChild(logoItem1Img);
 
@@ -161,6 +166,10 @@ let createHomePage = (() => {
     titleDescription.innerHTML = 'Delicious Mexican food served in house or at home!';
     titleDescription.classList.add('title-description');
     titleContainer.appendChild(titleDescription);
+
+    const mainImg = imgLibrary.mainBackgroundImg;
+    mainImg.classList.add('home-background');
+    contentDiv.appendChild(mainImg);
 
 
 })();
