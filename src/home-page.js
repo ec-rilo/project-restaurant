@@ -97,6 +97,27 @@ let createHomePage = (() => {
         socialMediaIconCont.appendChild(icon);
     }
 
+    // Bottom Navigation bar
+    const bottomNav = document.createElement('div');
+    bottomNav.classList.add('bottom-nav');
+    contentDiv.appendChild(bottomNav);
+
+    const bottomNavMenuItemsCont = document.createElement('ul');
+    bottomNavMenuItemsCont.classList.add('bottom-nav-menu-items');
+    bottomNav.appendChild(bottomNavMenuItemsCont);
+
+    const bottomNavMenuItemsArr = {
+        address: '699 Renner Dr. Arcata, CA',
+        tel: 'tel. 123-456-7890'
+    };
+
+    let bottomNavItem1 = document.createElement('li');
+    bottomNavItem1.innerHTML = bottomNavMenuItemsArr.address;
+    bottomNavMenuItemsCont.appendChild(bottomNavItem1);
+
+    let bottomNavItem2 = document.createElement('li');
+    bottomNavItem2.innerHTML = bottomNavMenuItemsArr.tel;
+    bottomNavMenuItemsCont.appendChild(bottomNavItem2);
 
 })();
 
