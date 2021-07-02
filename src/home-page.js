@@ -52,6 +52,16 @@ let createHomePage = (() => {
         topNavMenuItemsContainer.appendChild(menuItem);
     });
 
+    const topNavImgs = [imgLibrary.facebookIcon, ];
+
+    const numOfSocMedIcons = 1;
+    for (let i = 0; i < numOfSocMedIcons; ++i) {
+        const socialMediaIconCont = document.createElement('li');
+        topNavMenuItemsContainer.appendChild(socialMediaIconCont);
+
+        const icon = topNavImgs[i];
+        socialMediaIconCont.appendChild(icon);
+    }
 
 
 })();
