@@ -150,6 +150,12 @@ let createHomePage = (() => {
     mainTitle.innerHTML = 'La Mexicana';
     titleContainer.appendChild(mainTitle);
 
+    const titleDescription = document.createElement('p');
+    titleDescription.innerHTML = 'Delicious Mexican food served in house or at home!';
+    titleDescription.classList.add('title-description');
+    titleContainer.appendChild(titleDescription);
+
+
 })();
 
 export {
