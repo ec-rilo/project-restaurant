@@ -1,4 +1,18 @@
+import fIcon from '../dist/images/small-facebook-icon.png';
+
 'use strict';
+
+
+let imgLibrary = (() => {
+    const facebookIcon = new Image();
+    facebookIcon.classList.add('social-media-btns');
+    facebookIcon.src = fIcon;
+    facebookIcon.setAttribute('alt', 'A facebook icon');
+
+    return {
+        facebookIcon,
+    }
+})();
 
 let createHomePage = (() => {
     'use strict';
@@ -26,21 +40,18 @@ let createHomePage = (() => {
     topNavMenuItemsContainer.classList.add('top-nav-menu-items');
     topNav.appendChild(topNavMenuItemsContainer);
 
-    const menuItemNames = ['MENU', 'BAR', 'HOURS', 'ABOUT', 'CONTACT'];
-    menuItemNames.forEach( item => {
+    const menuItems = [{name: 'MENU'}, {name: 'BAR'}, {name: 'HOURS'}, {name: 'ABOUT'}, {name: 'CONTACT'}];
+    menuItems.forEach( item => {
         let menuItem = document.createElement('li');
 
         let menuItemText = document.createElement('a');
         menuItemText.setAttribute('href', '#');
-        menuItemText.innerHTML = item;
+        menuItemText.innerHTML = item.name;
         menuItem.appendChild(menuItemText);
 
         topNavMenuItemsContainer.appendChild(menuItem);
     });
 
-
-
-    
 
 
 })();
