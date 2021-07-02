@@ -108,16 +108,42 @@ let createHomePage = (() => {
 
     const bottomNavMenuItemsArr = {
         address: '699 Renner Dr. Arcata, CA',
-        tel: 'tel. 123-456-7890'
+        tel: 'tel. 123-456-7890',
     };
 
-    let bottomNavItem1 = document.createElement('li');
+    const bottomNavItem1 = document.createElement('li');
     bottomNavItem1.innerHTML = bottomNavMenuItemsArr.address;
     bottomNavMenuItemsCont.appendChild(bottomNavItem1);
 
-    let bottomNavItem2 = document.createElement('li');
+    const bottomNavItem2 = document.createElement('li');
     bottomNavItem2.innerHTML = bottomNavMenuItemsArr.tel;
     bottomNavMenuItemsCont.appendChild(bottomNavItem2);
+
+    const bottomNavItem3Li = document.createElement('li');
+    bottomNavMenuItemsCont.appendChild(bottomNavItem3Li);
+    
+    const bottomNavItem3Link = document.createElement('a');
+    bottomNavItem3Link.setAttribute('href', '#');
+    bottomNavItem3Li.appendChild(bottomNavItem3Link);
+
+    const bottomNavItem3Cont = document.createElement('div');
+    bottomNavItem3Cont.classList.add('order-online-btn');
+    bottomNavItem3Link.appendChild(bottomNavItem3Cont);
+    
+    const bottomNavItem3Text = document.createElement('p');
+    bottomNavItem3Text.innerHTML = 'Order Online';
+    bottomNavItem3Cont.appendChild(bottomNavItem3Text);
+
+    // Center content
+
+    const titleContainer = document.createElement('div');
+    titleContainer.classList.add('title-container');
+    contentDiv.appendChild(titleContainer);
+
+    const mainLogo = imgLibrary.mainLogo;
+    mainLogo.classList.add('logo-main');
+    mainLogo.setAttribute('alt', 'A mexican restaurant logo');
+    titleContainer.appendChild(mainLogo);
 
 })();
 
