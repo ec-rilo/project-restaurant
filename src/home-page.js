@@ -1,6 +1,8 @@
 import fIcon from '../dist/images/small-facebook-icon.png';
 import iIcon from '../dist/images/small-instagram-icon.png';
 import logo from '../dist/images/logo.png';
+import mainBackgroundImage from '../dist/images/tacos-dark.jpg'
+
 
 'use strict';
 
@@ -29,10 +31,15 @@ let imgLibrary = (() => {
     mainLogo.src = logo;
     mainLogo.setAttribute('alt', 'Mexican Restaurant Logo');
 
+    const mainBackgroundImg = new Image();
+    mainBackgroundImg.src = mainBackgroundImage;
+    mainBackgroundImg.setAttribute('alt', 'Picture of tacos');
+
     return {
         facebookIconCont,
         instaIconCont,
         mainLogo,
+        mainBackgroundImg,
     }
 })();
 
