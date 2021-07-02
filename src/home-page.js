@@ -59,10 +59,16 @@ let createHomePage = (() => {
     logoItem1Img.classList.add('logo-nav');
     logoItem1.appendChild(logoItem1Img);
 
+    topNavLogoItems.appendChild(logoItem1);
+
     const logoItem2 = document.createElement('li');
     logoItem2.classList.add('logo-item');
-    
-    topNavLogoItems.appendChild(logoItem1, logoItem2);
+    const logoItem2Text = document.createElement('p');
+    logoItem2Text.innerHTML = 'La Mexicana';
+    logoItem2Text.classList.add('nav-logo-name');
+    logoItem2.appendChild(logoItem2Text);
+
+    topNavLogoItems.appendChild(logoItem2);
 
     const topNavMenuItemsContainer = document.createElement('ul');
     topNavMenuItemsContainer.classList.add('top-nav-menu-items');
