@@ -1,16 +1,32 @@
 import fIcon from '../dist/images/small-facebook-icon.png';
+import iIcon from '../dist/images/small-instagram-icon.png';
 
 'use strict';
 
 
 let imgLibrary = (() => {
+    const facebookIconCont = document.createElement('a');
+    facebookIconCont.setAttribute('href', '#');
+
     const facebookIcon = new Image();
     facebookIcon.classList.add('social-media-btns');
     facebookIcon.src = fIcon;
     facebookIcon.setAttribute('alt', 'A facebook icon');
+    facebookIconCont.appendChild(facebookIcon);
+
+
+    const instaIconCont = document.createElement('a');
+    instaIconCont.setAttribute('href', '#');
+
+    const instaIcon = new Image();
+    instaIcon.src = iIcon;
+    instaIcon.classList.add('social-media-btns');
+    instaIcon.setAttribute('alt', 'A instagram icon');
+    instaIconCont.appendChild(instaIcon);
 
     return {
-        facebookIcon,
+        facebookIconCont,
+        instaIconCont,
     }
 })();
 
@@ -52,9 +68,9 @@ let createHomePage = (() => {
         topNavMenuItemsContainer.appendChild(menuItem);
     });
 
-    const topNavImgs = [imgLibrary.facebookIcon, ];
+    const topNavImgs = [imgLibrary.facebookIconCont, imgLibrary.instaIconCont];
 
-    const numOfSocMedIcons = 1;
+    const numOfSocMedIcons = 2;
     for (let i = 0; i < numOfSocMedIcons; ++i) {
         const socialMediaIconCont = document.createElement('li');
         topNavMenuItemsContainer.appendChild(socialMediaIconCont);
