@@ -145,6 +145,11 @@ let createHomePage = (() => {
     mainLogo.setAttribute('alt', 'A mexican restaurant logo');
     titleContainer.appendChild(mainLogo);
 
+    const mainTitle = document.createElement('h1');
+    mainTitle.classList.add('main-title');
+    mainTitle.innerHTML = 'La Mexicana';
+    titleContainer.appendChild(mainTitle);
+
 })();
 
 export {
