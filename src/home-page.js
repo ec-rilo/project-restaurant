@@ -171,7 +171,9 @@ let createHomePage = (() => {
     mainImg.classList.add('home-background');
     contentDiv.appendChild(mainImg);
 
-
+    return {
+        contentDiv
+    }
 })();
 
 export {

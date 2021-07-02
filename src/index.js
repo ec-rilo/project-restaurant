@@ -5,4 +5,7 @@ import {createHomePage} from './home-page.js';
 
 "use strict";
 
-console.log('Hello!');
+let program = (() => {
+    let homePage = createHomePage.contentDiv;
+
+})();
