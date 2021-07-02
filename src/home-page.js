@@ -1,5 +1,6 @@
 import fIcon from '../dist/images/small-facebook-icon.png';
 import iIcon from '../dist/images/small-instagram-icon.png';
+import logo from '../dist/images/logo.png';
 
 'use strict';
 
@@ -24,9 +25,14 @@ let imgLibrary = (() => {
     instaIcon.setAttribute('alt', 'A instagram icon');
     instaIconCont.appendChild(instaIcon);
 
+    const mainLogo = new Image();
+    mainLogo.src = logo;
+    mainLogo.setAttribute('alt', 'Mexican Restaurant Logo');
+
     return {
         facebookIconCont,
         instaIconCont,
+        mainLogo,
     }
 })();
 
@@ -45,11 +51,17 @@ let createHomePage = (() => {
 
     const topNavLogoItems = document.createElement('ul');
     topNavLogoItems.classList.add('top-nav-logo-info');
+    topNav.appendChild(topNavLogoItems);
+
     const logoItem1 = document.createElement('li');
     logoItem1.classList.add('logo-item');
+    const logoItem1Img = imgLibrary.mainLogo;
+    logoItem1Img.classList.add('logo-nav');
+    logoItem1.appendChild(logoItem1Img);
+
     const logoItem2 = document.createElement('li');
     logoItem2.classList.add('logo-item');
-    topNav.appendChild(topNavLogoItems);
+    
     topNavLogoItems.appendChild(logoItem1, logoItem2);
 
     const topNavMenuItemsContainer = document.createElement('ul');
