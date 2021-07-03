@@ -228,6 +228,27 @@ let createHomePage = (() => {
     footerWhiteLine.classList.add('white-line');
     footerContainer.appendChild(footerWhiteLine);
 
+    const hoursContainer = document.createElement('div');
+    hoursContainer.classList.add('hours-container');
+    footerContainer.appendChild(hoursContainer);
+
+    const footerHoursTitle = document.createElement('h5');
+    footerHoursTitle.innerHTML = 'Hours';
+    footerHoursTitle.classList.add('footer-hours-title');
+    hoursContainer.appendChild(footerHoursTitle);
+
+    const footerStoreHours = document.createElement('p');
+    footerStoreHours.innerHTML = 
+    'Monday 11:30-9' + '</br>' +
+    'Tuesday 11:30-9' + '</br>' +
+    'Wednesday 11:30-9' + '</br>' +
+    'Thursday 11:30-9' + '</br>' +
+    'Friday 11:30-9' + '</br>' +
+    'Saturday 11:30-9' + '</br>'+
+    'Sunday 11:30-9' + '</br>';
+    footerStoreHours.classList.add('footer-store-hours');
+    hoursContainer.appendChild(footerStoreHours);
+
     return {
         contentDiv
     }
