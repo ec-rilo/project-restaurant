@@ -171,6 +171,11 @@ let createHomePage = (() => {
     mainImg.classList.add('home-background');
     contentDiv.appendChild(mainImg);
 
+     
+    const pageSeparation = document.createElement('div');
+    pageSeparation.classList.add('white-line-break');
+    contentDiv.appendChild(pageSeparation);
+
     return {
         contentDiv
     }
