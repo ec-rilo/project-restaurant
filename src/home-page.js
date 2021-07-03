@@ -256,6 +256,19 @@ let createHomePage = (() => {
     'tel / 123-456-7890';
     hoursContainer.appendChild(footerAddress);
 
+
+    const acknoFooter = document.createElement('div');
+    acknoFooter.classList.add('ackno-footer');
+    contentDiv.appendChild(acknoFooter);
+
+    const copyright = document.createElement('p');
+    copyright.innerHTML = '© 2021 Mockup Restaurant';
+    acknoFooter.appendChild(copyright);
+
+    const websiteCredits = document.createElement('p');
+    websiteCredits.innerHTML = 'Website: Edgar Carrillo';
+    acknoFooter.appendChild(websiteCredits);
+
     return {
         contentDiv
     }
