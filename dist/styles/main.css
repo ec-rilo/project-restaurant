@@ -188,3 +188,16 @@ ul {
     background-color: #FFF;
     height: 200px;
 }
+
+.footer-content-container {
+    display: grid;
+    box-sizing: border-box;
+    background-color: var(--color-1);
+    height: 80vh;
+    grid-template-columns: 1fr 5px 1fr;
+    grid-template-rows: 1fr 350px 1fr;
+    grid-template-areas: 
+    '. . .'
+    'title-content white-line hours-container'
+    '.  . contact-container';
+}

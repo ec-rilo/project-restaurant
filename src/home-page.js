@@ -176,6 +176,10 @@ let createHomePage = (() => {
     pageSeparation.classList.add('white-line-break');
     contentDiv.appendChild(pageSeparation);
 
+    const footerContainer = document.createElement('div');
+    footerContainer.classList.add('footer-content-container');
+    contentDiv.appendChild(footerContainer);
+
     return {
         contentDiv
     }
