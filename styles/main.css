@@ -201,3 +201,11 @@ ul {
     'title-content white-line hours-container'
     '.  . contact-container';
 }
+
+.title-content {
+    grid-area: title-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
