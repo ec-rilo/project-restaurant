@@ -277,3 +277,13 @@ ul {
     font-weight: bold;
     line-height: 25px;
 }
+
+.ackno-footer {
+    display: flex;
+    background-color: #FFF;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    color: #a0a09f;
+    font-size: 13px;
+}
