@@ -180,6 +180,10 @@ let createHomePage = (() => {
     footerContainer.classList.add('footer-content-container');
     contentDiv.appendChild(footerContainer);
 
+    const footerTitleContent = document.createElement('div');
+    footerTitleContainer.classList.add('title-content');
+    footerContainer.appendChild(footerTitleContainer);
+
     return {
         contentDiv
     }
