@@ -269,3 +269,11 @@ ul {
     top: 20px;
     line-height: 25px;
 }
+
+.footer-address {
+    color: white;
+    position: relative;
+    top: 50px;
+    font-weight: bold;
+    line-height: 25px;
+}
