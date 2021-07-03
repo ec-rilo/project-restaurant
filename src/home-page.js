@@ -39,12 +39,24 @@ let imgLibrary = (() => {
     mainBackgroundImg.src = mainBackgroundImage;
     mainBackgroundImg.setAttribute('alt', 'Picture of tacos');
 
+    const facebookIconFooter = new Image();
+    facebookIconFooter.src = fIcon;
+    facebookIconFooter.classList.add('small-logo-size', 'footer-logo');
+    facebookIconFooter.setAttribute('alt', 'A facebook icon');
+
+    const instaIconFooter = new Image();
+    instaIconFooter.src = iIcon;
+    instaIconFooter.classList.add('small-logo-size', 'footer-logo');
+    instaIconFooter.setAttribute('alt', 'A facebook icon');
+
     return {
         facebookIconCont,
         instaIconCont,
         mainLogo,
         mainLogoNav,
         mainBackgroundImg,
+        facebookIconFooter,
+        instaIconFooter,
     }
 })();
 
@@ -193,6 +205,24 @@ let createHomePage = (() => {
     footerTitleDescription.classList.add('footer-description');
     footerTitleDescription.innerHTML = 'Mexican Restaurant';
     footerTitleContainer.appendChild(footerTitleDescription);
+
+    const socialMediaContainer = document.createElement('div');
+    socialMediaContainer.classList.add('social-media-container');
+    footerTitleContainer.appendChild(socialMediaContainer);
+
+    const socialButton1 = document.createElement('a');
+    socialButton1.setAttribute('href', '#')
+    socialMediaContainer.appendChild(socialButton1);
+    
+    const socialButton1Img = imgLibrary.facebookIconFooter;
+    socialButton1.appendChild(socialButton1Img);
+
+    const socialButton2 = document.createElement('a');
+    socialButton2.setAttribute('href', '#');
+    socialMediaContainer.appendChild(socialButton2);
+
+    const socialButton2Img = imgLibrary.instaIconFooter;
+    socialButton2.appendChild(socialButton2Img);
 
     return {
         contentDiv
