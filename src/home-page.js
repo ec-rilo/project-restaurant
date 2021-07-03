@@ -249,6 +249,13 @@ let createHomePage = (() => {
     footerStoreHours.classList.add('footer-store-hours');
     hoursContainer.appendChild(footerStoreHours);
 
+    const footerAddress = document.createElement('p');
+    footerAddress.classList.add('footer-address');
+    footerAddress.innerHTML =
+    '699 Renner Dr. Arcata, CA' + '</br>' +
+    'tel / 123-456-7890';
+    hoursContainer.appendChild(footerAddress);
+
     return {
         contentDiv
     }
