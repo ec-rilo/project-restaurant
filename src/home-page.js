@@ -180,9 +180,19 @@ let createHomePage = (() => {
     footerContainer.classList.add('footer-content-container');
     contentDiv.appendChild(footerContainer);
 
-    const footerTitleContent = document.createElement('div');
+    const footerTitleContainer = document.createElement('div');
     footerTitleContainer.classList.add('title-content');
     footerContainer.appendChild(footerTitleContainer);
+
+    const footerTitle = document.createElement('h4');
+    footerTitle.classList.add('footer-title');
+    footerTitle.innerHTML = 'La Mexicana';
+    footerTitleContainer.appendChild(footerTitle);
+    
+    const footerTitleDescription = document.createElement('h5');
+    footerTitleDescription.classList.add('footer-description');
+    footerTitleDescription.innerHTML = 'Mexican Restaurant';
+    footerTitleContainer.appendChild(footerTitleDescription);
 
     return {
         contentDiv

@@ -209,3 +209,15 @@ ul {
     justify-content: center;
     align-items: center;
 }
+
+.footer-title {
+    font-size: 70px;
+    color: white;
+}
+
+.footer-description {
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    color: white;
+}
