@@ -249,3 +249,23 @@ ul {
     background-color: white;
     border-radius: 10px;
 }
+
+.hours-container {
+    grid-area: hours-container;
+    position: relative;
+    left: 150px;
+    top: 20px;
+}
+
+.footer-hours-title {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer-store-hours {
+    position: relative;
+    color: white;
+    top: 20px;
+    line-height: 25px;
+}
