@@ -224,6 +224,10 @@ let createHomePage = (() => {
     const socialButton2Img = imgLibrary.instaIconFooter;
     socialButton2.appendChild(socialButton2Img);
 
+    const footerWhiteLine = document.createElement('div');
+    footerWhiteLine.classList.add('white-line');
+    footerContainer.appendChild(footerWhiteLine);
+
     return {
         contentDiv
     }
