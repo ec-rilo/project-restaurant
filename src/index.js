@@ -27,7 +27,11 @@ let program = (() => {
 
 
     let menuPageBtn = document.getElementById(`MENU-page-btn`);
-    menuPageBtn.addEventListener('click', () => console.log('it works'));
+    menuPageBtn.addEventListener('click', () => {
+        closePages(pagesArr);
+        openPage(barPage);
+  
+    });
 
 
 
