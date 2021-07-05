@@ -5,7 +5,17 @@ import {createHomePage} from './home-page.js';
 
 "use strict";
 
+function closePages(pagesArr) {
+    pagesArr.forEach(page => {
+        page.style.display = 'none';
+    });
+}
+
 let program = (() => {
-    let homePage = createHomePage.contentDiv;
+    let landingPage = createHomePage.contentDiv;
+
+    const pagesArr = [landingPage];
+
+    closePages(pagesArr);
 
 })();
