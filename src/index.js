@@ -2,6 +2,7 @@ import _ from 'lodash';
 import '../dist/styles/reset.css';
 import '../dist/styles/main.css';
 import {createHomePage} from './home-page.js';
+import {createBarPage} from './bar.js';
 
 "use strict";
 
@@ -11,11 +12,15 @@ function closePages(pagesArr) {
     });
 }
 
+function openPage(page) {
+    page.style.display = 'block';
+
+}
+
 let program = (() => {
     let landingPage = createHomePage.contentDiv;
-
-    const pagesArr = [landingPage];
-
+    let barPage = createBarPage.contentDiv;
+    let pagesArr = [landingPage, barPage];
     closePages(pagesArr);
 
 })();

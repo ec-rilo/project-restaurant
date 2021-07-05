@@ -255,7 +255,7 @@ let createHomePage = (() => {
     '699 Renner Dr. Arcata, CA' + '</br>' +
     'tel / 123-456-7890';
     hoursContainer.appendChild(footerAddress);
-    
+
     const acknoFooter = document.createElement('div');
     acknoFooter.classList.add('ackno-footer');
     contentDiv.appendChild(acknoFooter);
