@@ -23,4 +23,12 @@ let program = (() => {
     let pagesArr = [landingPage, barPage];
     closePages(pagesArr);
 
+    openPage(landingPage);
+
+
+    let menuPageBtn = document.getElementById(`MENU-page-btn`);
+    menuPageBtn.addEventListener('click', () => console.log('it works'));
+
+
+
 })();
