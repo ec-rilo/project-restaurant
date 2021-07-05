@@ -101,6 +101,7 @@ let createHomePage = (() => {
     const menuItems = [{name: 'MENU'}, {name: 'BAR'}, {name: 'HOURS'}, {name: 'ABOUT'}, {name: 'CONTACT'}];
     menuItems.forEach( item => {
         let menuItem = document.createElement('li');
+        menuItem.setAttribute('id', `${item.name}-page-btn`);
 
         let menuItemText = document.createElement('a');
         menuItemText.setAttribute('href', '#');
