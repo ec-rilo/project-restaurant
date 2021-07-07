@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import '../dist/styles/reset.css';
 import '../dist/styles/main.css';
+import '../dist/styles/menu.css';
 import {createHomePage} from './home-page.js';
 import {createBarPage} from './bar.js';
 
@@ -23,15 +24,16 @@ let program = (() => {
     let pagesArr = [landingPage, barPage];
     closePages(pagesArr);
 
-    openPage(landingPage);
+    openPage(barPage);
+
+    // openPage(landingPage);
 
 
-    let menuPageBtn = document.getElementById(`MENU-page-btn`);
-    menuPageBtn.addEventListener('click', () => {
-        closePages(pagesArr);
-        openPage(barPage);
-  
-    });
+    // let menuPageBtn = document.getElementById(`MENU-page-btn`);
+    // menuPageBtn.addEventListener('click', () => {
+    //     closePages(pagesArr);
+    //     openPage(barPage);
+    // });
 
 
 
