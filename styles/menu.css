@@ -1,6 +1,6 @@
 .bar-menu-title-container {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -18,4 +18,18 @@
     font-size: 20px;
     font-weight: bold;
     line-height: 30px;
+}
+
+.menu-tabs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu-tab-item-li {
+    margin: 30px;
+}
+
+.menu-tab-item {
+    color: #000 ;
 }
