@@ -74,7 +74,7 @@
     display: grid;
     top: 50px;
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(auto-fit, 110px);
     justify-content: center;
     text-align: left;
     height: 450px;
