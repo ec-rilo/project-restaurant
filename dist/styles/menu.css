@@ -31,7 +31,29 @@
 }
 
 .menu-tab-item {
-    color: #000 ;
+    color: #000;
+}
+
+.menu-tab-item-1 {
+    padding-bottom: 3px;
+    border-bottom: 1px solid black;
+    transition: 1s;
+}
+
+.menu-tab-item-1:hover {
+    
+}
+
+.menu-tab-item-2 {
+    
+    padding-bottom: 0px;
+    border-bottom: 0px solid rgba(0, 0, 0, 0);
+    transition: .2s;
+}
+
+.menu-tab-item-2:hover {
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
 .menu-tab-title {
