@@ -189,6 +189,7 @@ let createBarPage = (() => {
         menuTabLi.classList.add('menu-tab-item-li');
 
         const menuTabItemInner = document.createElement('a');
+        menuTabItemInner.setAttribute('href', '#');
         menuTabItemInner.classList.add('menu-tab-item', `menu-tab-item-${i + 1}`);
         menuTabItemInner.innerHTML = menuTabNamesArr[i];
         menuTabLi.appendChild(menuTabItemInner);
