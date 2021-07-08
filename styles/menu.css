@@ -1,6 +1,6 @@
 .bar-menu-title-container {
     position: absolute;
-    top: 50%;
+    top: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -32,4 +32,40 @@
 
 .menu-tab-item {
     color: #000 ;
+}
+
+.menu-tab-title {
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-container-box {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.menu-container {
+    position: relative;
+    display: grid;
+    top: 50px;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(auto-fit, 100px);
+    justify-content: center;
+    text-align: left;
+    height: 450px;
+}
+
+.menu-item-container {
+    margin: 0 25px 0 25px;
+}
+
+.menu-item-name {
+    font-weight: bold;
+}
+
+.menu-item-ingredients {
+    width: 300px;
 }
