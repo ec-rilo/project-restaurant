@@ -158,6 +158,77 @@ let createBarPage = (() => {
     bottomNavItem3Text.innerHTML = 'Order Online';
     bottomNavItem3Cont.appendChild(bottomNavItem3Text);
 
+    // Create Bar Page content
+
+    const barPageContainer = document.createElement('div');
+    barPageContainer.classList.add('bar-menu-title-container');
+    contentDiv.appendChild(barPageContainer);
+
+    const menuTitle = document.createElement('h4');
+    menuTitle.classList.add('menu-title');
+    menuTitle.innerHTML = 'BAR MENU';
+    barPageContainer.appendChild(menuTitle);
+
+    const menuDescription = document.createElement('p');
+    menuDescription.classList.add('menu-description');
+    menuDescription.innerHTML =
+    'Available for take-out & curbside pickup.' +
+    '</br>' +
+    'Please call to verify current onsite dining options. We continue to follow all state guidelines.';
+    barPageContainer.appendChild(menuDescription);
+
+    const menuTabsContainer = document.createElement('ul');
+    menuTabsContainer.classList.add('menu-tabs-container');
+    barPageContainer.appendChild(menuTabsContainer);
+
+    let numOfTabs = 2;
+    const menuTabNamesArr = ['Bar Drinks', 'Non-Alcoholic Drinks'];
+
+    for (let i = 0; i < numOfTabs; ++i) {
+        const menuTabLi = document.createElement('li');
+        menuTabLi.classList.add('menu-tab-item-li');
+
+        const menuTabItemInner = document.createElement('a');
+        menuTabItemInner.classList.add('menu-tab-item', `menu-tab-item-${i + 1}`);
+        menuTabItemInner.innerHTML = menuTabNamesArr[i];
+        menuTabLi.appendChild(menuTabItemInner);
+
+        menuTabsContainer.appendChild(menuTabLi);
+    }
+
+    const menuContainerBox = document.createElement('div');
+    menuContainerBox.classList.add('menu-container-box');
+    barPageContainer.appendChild(menuContainerBox);
+
+    const menuTabTitle = document.createElement('p');
+    menuTabTitle.classList.add('menu-tab-title');
+    menuTabTitle.innerHTML = 'BAR DRINKS';
+    menuContainerBox.appendChild(menuTabTitle);
+
+    const menuContainer = document.createElement('ul');
+    menuContainer.classList.add('menu-container');
+    menuContainerBox.appendChild(menuContainer);
+
+    const numOfMenuItems = 12;
+
+    for (let i = 0; i < numOfMenuItems; ++i) {
+        const menuItemContainer = document.createElement('li');
+        menuItemContainer.classList.add('menu-item-container');
+        menuContainer.appendChild(menuItemContainer);
+
+        const menuItemName = document.createElement('p');
+        menuItemName.classList.add('menu-item-name');
+        menuItemName.innerHTML = 'MARGARITA';
+        menuItemContainer.appendChild(menuItemName);
+
+        const menuItemIngredients = document.createElement('p');
+        menuItemIngredients.classList.add('menu-item-ingredients');
+        menuItemIngredients.innerHTML = 
+        'Crafted blend of tequila blanco-fortified sake, simple syrup, and fresh citrus.' +
+        'Served on the rocks, with or without salt.';
+        menuItemContainer.appendChild(menuItemIngredients);
+    }
+
     return {
         contentDiv
     }
