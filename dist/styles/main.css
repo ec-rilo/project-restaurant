@@ -47,6 +47,11 @@ ul {
     padding: 10px !important;
 }
 
+.logo-item:hover {
+    cursor: pointer;
+}
+
+
 .logo-nav {
     display: block;
     width: 70px;
