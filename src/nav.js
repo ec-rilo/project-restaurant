@@ -105,6 +105,11 @@ let createNav = (() => {
         menuItemText.innerHTML = item.name;
         menuItem.appendChild(menuItemText);
 
+        let menuItemAtt = menuItemText.getAttribute('id');
+        if (menuItemAtt === 'HOURS-page-btn') {
+            menuItemText.setAttribute('href', '#footer-container');
+        }
+
         topNavMenuItemsContainer.appendChild(menuItem);
     });
 

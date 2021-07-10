@@ -96,6 +96,7 @@ let createHomePage = (() => {
 
     const footerContainer = document.createElement('div');
     footerContainer.classList.add('footer-content-container');
+    footerContainer.setAttribute('id', 'footer-container');
     contentDiv.appendChild(footerContainer);
 
     const footerTitleContainer = document.createElement('div');

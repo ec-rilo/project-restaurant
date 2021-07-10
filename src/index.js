@@ -24,6 +24,7 @@ let program = (() => {
     let landingPage = createHomePage.contentDiv;
     let barPage = createBarPage.contentDiv;
     let menuPage = createMenuPage.contentDiv;
+    let hoursPage = document.querySelector('.footer-content-container');
     let pagesArr = [landingPage, barPage, menuPage];
     closePages(pagesArr);
 
@@ -49,6 +50,13 @@ let program = (() => {
         console.log('HI');
         closePages(pagesArr);
         openPage(barPage);
+    });
+
+    let hoursPageBtn = document.getElementById(`HOURS-page-btn`);
+    hoursPageBtn.addEventListener('click', () => {
+        console.log('hi');
+        closePages(pagesArr);
+        openPage(landingPage);
     });
 
 })();
