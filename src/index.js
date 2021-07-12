@@ -26,11 +26,12 @@ let program = (() => {
     let landingPage = createHomePage.contentDiv;
     let barPage = createBarPage.contentDiv;
     let menuPage = createMenuPage.contentDiv;
+    let aboutPage = createAboutPage.contentDiv;
     let hoursPage = document.querySelector('.footer-content-container');
-    let pagesArr = [landingPage, barPage, menuPage];
+    let pagesArr = [landingPage, barPage, menuPage, aboutPage];
     closePages(pagesArr);
 
-    // openPage(landingPage);
+    openPage(landingPage);
 
     let landingPageBtn = document.querySelector(`.logo-item`);
     console.log(landingPageBtn);
@@ -59,6 +60,13 @@ let program = (() => {
         console.log('hi');
         closePages(pagesArr);
         openPage(landingPage);
+    });
+
+    let aboutPageBtn = document.getElementById(`ABOUT-page-btn`);
+    aboutPageBtn.addEventListener('click', () => {
+        console.log('hi');
+        closePages(pagesArr);
+        openPage(aboutPage);
     });
 
 })();
