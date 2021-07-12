@@ -7,6 +7,7 @@ import {createNav} from './nav.js';
 import {createHomePage} from './home-page.js';
 import {createBarPage} from './bar.js';
 import {createMenuPage} from './menu-page.js';
+import {createAboutPage} from './about.js';
 
 "use strict";
 
