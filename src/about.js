@@ -51,6 +51,16 @@ let createAboutPage = (() => {
     'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
     textContainer.appendChild(para3);
 
+    const imgContainer = document.createElement('div');
+    imgContainer.classList.add('about-background-img');
+    contentDiv.appendChild(imgContainer);
+
+    const backgroundImg = document.createElement('img');
+    backgroundImg.classList.add('about-img');
+    backgroundImg.setAttribute('src', '../dist/images/tacos.jpg');
+    backgroundImg.setAttribute('alt', 'Street Tacos');
+    imgContainer.appendChild(backgroundImg)
+
     return {
         contentDiv
     }
