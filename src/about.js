@@ -1,4 +1,4 @@
-import mainBackgroundImage from '../dist/images/tacos-dark.jpg'
+import tacosImg from '../dist/images/tacos.jpg'
 
 let createAboutPage = (() => {
 
@@ -57,7 +57,7 @@ let createAboutPage = (() => {
 
     const backgroundImg = document.createElement('img');
     backgroundImg.classList.add('about-img');
-    backgroundImg.setAttribute('src', '../dist/images/tacos.jpg');
+    backgroundImg.setAttribute('src', tacosImg);
     backgroundImg.setAttribute('alt', 'Street Tacos');
     imgContainer.appendChild(backgroundImg)
 
