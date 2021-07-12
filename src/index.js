@@ -2,6 +2,7 @@ import _ from 'lodash';
 import '../dist/styles/reset.css';
 import '../dist/styles/main.css';
 import '../dist/styles/menu.css';
+import '../dist/styles/about.css';
 import {createNav} from './nav.js';
 import {createHomePage} from './home-page.js';
 import {createBarPage} from './bar.js';
@@ -28,7 +29,7 @@ let program = (() => {
     let pagesArr = [landingPage, barPage, menuPage];
     closePages(pagesArr);
 
-    openPage(landingPage);
+    // openPage(landingPage);
 
     let landingPageBtn = document.querySelector(`.logo-item`);
     console.log(landingPageBtn);
