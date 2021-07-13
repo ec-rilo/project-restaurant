@@ -9,6 +9,7 @@ import {createHomePage} from './home-page.js';
 import {createBarPage} from './bar.js';
 import {createMenuPage} from './menu-page.js';
 import {createAboutPage} from './about.js';
+import {createContactPage} from './contact.js';
 
 "use strict";
 
@@ -29,6 +30,7 @@ let program = (() => {
     let menuPage = createMenuPage.contentDiv;
     let aboutPage = createAboutPage.contentDiv;
     let hoursPage = document.querySelector('.footer-content-container');
+    let contactPage = createContactPage.contentDiv;
     let pagesArr = [landingPage, barPage, menuPage, aboutPage];
     closePages(pagesArr);
 
@@ -68,6 +70,13 @@ let program = (() => {
         console.log('hi');
         closePages(pagesArr);
         openPage(aboutPage);
+    });
+
+    let contactPageBtn = document.getElementById(`CONTACT-page-btn`);
+    contactPageBtn.addEventListener('click', () => {
+        console.log('hi');
+        closePages(pagesArr);
+        openPage(contactPage);
     });
 
 })();
