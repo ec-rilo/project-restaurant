@@ -31,7 +31,7 @@ let program = (() => {
     let pagesArr = [landingPage, barPage, menuPage, aboutPage];
     closePages(pagesArr);
 
-    openPage(landingPage);
+    // openPage(landingPage);
 
     let landingPageBtn = document.querySelector(`.logo-item`);
     console.log(landingPageBtn);

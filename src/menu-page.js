@@ -132,7 +132,7 @@ let createMenuPage = (() => {
         menuItemIngredients.classList.add('menu-item-ingredients');
         menuItemIngredients.innerHTML = 
         'Arroz mexicano, frijoles pinquitos, guacamole, molcajete, cilantro y limón.' +
-        'Con una opción de proteina: Carnitas, Pollo al Achiote Hongos y Calabaza';
+        'Con una opción de proteina: Carnitas, Pollo al Achiote, Hongos y Calabaza';
         menuItemContainer.appendChild(menuItemIngredients);
     }
 
