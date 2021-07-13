@@ -31,10 +31,10 @@ let program = (() => {
     let aboutPage = createAboutPage.contentDiv;
     let hoursPage = document.querySelector('.footer-content-container');
     let contactPage = createContactPage.contentDiv;
-    let pagesArr = [landingPage, barPage, menuPage, aboutPage];
+    let pagesArr = [landingPage, barPage, menuPage, aboutPage, contactPage];
     closePages(pagesArr);
 
-    // openPage(landingPage);
+    openPage(landingPage);
 
     let landingPageBtn = document.querySelector(`.logo-item`);
     console.log(landingPageBtn);
