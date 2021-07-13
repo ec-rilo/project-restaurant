@@ -3,6 +3,7 @@ import '../dist/styles/reset.css';
 import '../dist/styles/main.css';
 import '../dist/styles/menu.css';
 import '../dist/styles/about.css';
+import '../dist/styles/contact.css';
 import {createNav} from './nav.js';
 import {createHomePage} from './home-page.js';
 import {createBarPage} from './bar.js';
